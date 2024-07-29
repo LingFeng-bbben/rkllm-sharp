@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>rkllm_sharp</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <Version>1.0.0</Version>
+    <Authors>Lingfeng-bbben</Authors>
+    <Company>Lingfeng-bbben</Company>
+    <Repository>
+      <Url>https://github.com/LingFeng-bbben/rkllm-sharp</Url>
+    </Repository>
+    <Readme>README.md</Readme>
+    <Tags>RK3588,rkllm,Rockchip</Tags>
+  </PropertyGroup>
+
+</Project>
