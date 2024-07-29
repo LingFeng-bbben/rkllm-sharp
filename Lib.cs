@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 namespace rkllm_sharp
 {
     
-    unsafe partial class _LLmInternal
+    public unsafe partial class _LLmInternal
     {
         [LibraryImport("librkllmrt.so")]
         protected static partial RKLLMParam rkllm_createDefaultParam();
@@ -61,7 +61,7 @@ namespace rkllm_sharp
         };
     }
 
-    class Rkllm : _LLmInternal, IDisposable
+    public class Rkllm : _LLmInternal, IDisposable
     {
         private UIntPtr _handle = 0;
         private RKLLMParam _internalParam;
@@ -213,7 +213,7 @@ namespace rkllm_sharp
         };
     }
 
-    class RkllmParameters
+    public class RkllmParameters
     {
         public int NumNpuCore = 1;       /* Number of NPU cores used for model inference. */
         public int MaxContextLength = 512;    /* Maximum size of the context. */
